@@ -32,7 +32,7 @@
         <h3>quick links</h3>
         <li v-for="(link,i) in quickLink" 
         :key="i">
-        {{ link.text }}
+        <a href="#">{{ link.text }}</a>
         </li>
       </ul>
 
@@ -40,7 +40,7 @@
         <h3>help</h3>
         <li v-for="(link,i) in help" 
         :key="i">
-        {{ link.text }}
+        <a href="#">{{ link.text }}</a>
         </li>
       </ul>
 
@@ -48,7 +48,7 @@
         <h3>Follow Us</h3>
         <li v-for="(link,i) in followUs" 
         :key="i">
-        {{ link.text }}
+        <a href="#">{{ link.text }}</a>
         </li>
       </ul>
 
@@ -81,6 +81,7 @@
     color: white;
     background-color:$my-blue;
     display: flex;
+    justify-content: space-around;
     align-items: center;
     .futio-social{
       width: 400px;
@@ -95,6 +96,24 @@
     }
     .info-section{
       display: flex;
+      ul{
+        width: 200px;
+        list-style: none;
+        a{
+          text-decoration: none;
+          color: $my-white;
+          text-transform: capitalize;
+          &:hover{
+            color: $my-lightgreen;
+          }
+        }
+      }
+      h3{
+        text-transform: capitalize;
+        font-family: $primary-font;
+        font-weight: 600;
+        font-size: 1.5rem;
+      }
     }
   }
 </style>
