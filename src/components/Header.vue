@@ -52,6 +52,8 @@
 @import '../scss/partials/general' ;
 
 section{
+  position: fixed;
+  width: 100%;
   font-family: $primary-font;
   //colore da togliere in futuro
   background-color: $my-blue;

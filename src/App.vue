@@ -26,7 +26,7 @@ data(){
 
   <Header />
 
-  <h3> questo é app.</h3>
+  
 
 
   <Footer />

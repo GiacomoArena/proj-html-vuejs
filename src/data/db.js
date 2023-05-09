@@ -77,6 +77,54 @@ const blog=[
   },
   
 ]
+const quickLink=[
+  {
+    text:'games'
+  },
+  {
+    text:'latest tournament'
+  },
+  {
+    text:'shop'
+  },
+  {
+    text:'blog'
+  },
+  {
+    text:'contact'
+  },
+  
+]
+const help=[
+  {
+    text:'faqs'
+  },
+  {
+    text:'terms & conditions'
+  },
+  {
+    text:'privacy'
+  },
+]
+const followUs=[
+  {
+    text:'facebook'
+  },
+  {
+    text:'twitter'
+  },
+  {
+    text:'instagram'
+  },
+  {
+    text:'youtube'
+  },
+  {
+    text:'github'
+  },
+  
+]
 
 
-export {games,shop,pages,blog};
+
+export {games,shop,pages,blog,quickLink,help,followUs};

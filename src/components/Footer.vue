@@ -1,17 +1,100 @@
   <script>
-
+  import {quickLink,help,followUs} from '../data/db'
 
   export default {
     name:'Footer',
+    data(){
+      return{
+        quickLink,
+        help,
+        followUs
+      }
+    }
   }
   </script>
 
 
 <template>
-  <h1>Footer</h1>
+
+  <section class="top-footer">
+    <div class="futio-social">
+      <img src="../assets/logo.png" alt="logo">
+      <p>Lorem ipsum dolor sit amet, elit. varius enim in eros elementum Duis mi quis viverra ornare</p>
+      <span><i class="fa-brands fa-youtube"></i></span>
+      <span><i class="fa-brands fa-twitch"></i></span>
+      <span><i class="fa-brands fa-facebook-f"></i></span>
+      <span><i class="fa-brands fa-instagram"></i></span>
+    </div>
+
+    <div class="info-section">
+      
+      <ul>
+        <h3>quick links</h3>
+        <li v-for="(link,i) in quickLink" 
+        :key="i">
+        {{ link.text }}
+        </li>
+      </ul>
+
+      <ul>
+        <h3>help</h3>
+        <li v-for="(link,i) in help" 
+        :key="i">
+        {{ link.text }}
+        </li>
+      </ul>
+
+      <ul>
+        <h3>Follow Us</h3>
+        <li v-for="(link,i) in followUs" 
+        :key="i">
+        {{ link.text }}
+        </li>
+      </ul>
+
+      <ul>
+        <h3>contact</h3>
+        <li>
+          <h6>location:</h6>
+          <span>4 Mayfield, Buckden, PE19 5SZ</span>
+        </li>
+        <li>
+          <h6>Phone:</h6>
+          <span>(302) 555-0107</span>
+        </li>
+      </ul>
+
+
+    </div>
+  </section>
+
 </template>
 
 
 <style lang="scss" scoped>
-
+@use '../scss/partials/variables' as*;
+//da togliere e mettere succesivamente nel jumbotron
+  .top-footer{
+    font-family: $secondary-font;
+    height: 575px;
+    padding-top: 105px;
+    color: white;
+    background-color:$my-blue;
+    display: flex;
+    align-items: center;
+    .futio-social{
+      width: 400px;
+      span{
+        color: $my-white;
+        font-size: 1rem;
+        border: 1px solid $my-white;
+        margin: 5px;
+        padding: 8px 11px;
+        border-radius: 50%;
+      }
+    }
+    .info-section{
+      display: flex;
+    }
+  }
 </style>
