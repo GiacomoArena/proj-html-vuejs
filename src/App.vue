@@ -35,4 +35,5 @@ data(){
 <style lang="scss" scoped>
 @import '../src/scss/Main.scss'  ;
 
+
 </style>
