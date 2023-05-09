@@ -54,7 +54,7 @@
             </p>
           </span>
         </div>
-
+        <button>PLAN NOW<img src="../../assets/svg/e-double-right-arrow.svg"></button>
       </div>
     </div>
   </section>
@@ -64,7 +64,8 @@
 <style lang="scss" scoped>
 @use '../../scss/partials/variables' as*;
   section{
-    height: 900px;
+    padding-top: 100px; 
+    padding-bottom: 150px; 
     background-color: black;
     display: flex;
     justify-content: space-around;
@@ -90,6 +91,7 @@
         font-family: $secondary-font;
       }
       .features{
+        position: relative;
         margin-top: 20px;
         display: flex;
         flex-direction: column;
@@ -112,6 +114,44 @@
           font-weight: 400;
           font-size: 1rem;
         }
+        button{
+          font-family: $secondary-font;
+          background-color: $my-green;
+          border-radius: 25px;
+          font-weight: 600;
+          color: black;
+          text-transform: uppercase;
+          padding: 10px;
+          position: absolute;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          margin: 5px;
+          transition: 0.3s all;
+          border: none;
+          bottom: -80px;
+          left: 0px;
+        &::after{
+          position: absolute;
+          content: "";
+          width: 108%;
+          height: 120%;
+          border: 1px solid $my-green;
+          padding: 5px;
+          border-radius: 30px;
+        }
+        &:hover::after{
+          border-color: $my-lightgreen;
+        }
+        &:hover{
+          background-color: $my-lightgreen;
+        }
+        img{
+          width: 15px;
+          filter: brightness(0);
+          margin-left: 5px;
+        }
+      }
       }
     }
   }

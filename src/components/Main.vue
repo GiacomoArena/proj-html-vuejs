@@ -1,10 +1,12 @@
   <script>
   import Platform from './partials/Platform.vue';
+  import TrendingBattle from './partials/TrendingBattle.vue';
 
   export default {
     name:'Main',
     components:{
       Platform, 
+      TrendingBattle,
     },
     data(){
       return{
@@ -18,7 +20,7 @@
 <template>
   <Platform />
 
-
+  <TrendingBattle />
 
 </template>
 
