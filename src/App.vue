@@ -32,7 +32,7 @@ data(){
   <Footer />
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @import '../src/scss/Main.scss'  ;
 
 
