@@ -62,7 +62,9 @@ section{
   display: flex;
   align-items: center;
   justify-content: space-around;
-
+  img{
+    cursor: pointer;
+  }
   .link-menu{
     display: flex;
     text-transform: capitalize;
@@ -75,6 +77,7 @@ section{
       margin: 0 15px;
       width: 25px;
       height: 25px;
+      cursor: pointer;
     }
     button{
       background-color: $my-green;

@@ -84,7 +84,9 @@ ul{
     
     
     .hover-container{
-      padding: 30px 0;
+      
+      line-height: 35px;
+      padding: 18px 0px;
       width: 200px;
       display: none;
       flex-direction: column;

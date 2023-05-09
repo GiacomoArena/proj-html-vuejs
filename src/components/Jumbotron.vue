@@ -22,7 +22,7 @@
       <div class="buttons">
         <button>explore games <img src="../assets/svg/e-double-right-arrow.svg"></button>
 
-        <a href="#">
+        <a href="https://www.youtube.com/watch?v=Djz8Nc0Qxwk" >
           <img class="play" src="../assets/icon/play-icon.png" alt="play">
         </a>
 
