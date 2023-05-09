@@ -51,6 +51,7 @@
 @import '../scss/partials/general' ;
 
 section{
+  font-family: $primary-font;
   //colore da togliere in futuro
   background-color: $my-blue;
   height: 105px;
@@ -60,16 +61,19 @@ section{
 
   .link-menu{
     display: flex;
+    text-transform: capitalize;
+    font-weight: 600;
   }
   .cart{
     display: flex;
     align-items: center;
     img{
+      margin: 0 15px;
       width: 25px;
       height: 25px;
     }
     button{
-      background-color: $my-lightgreen;
+      background-color: $my-green;
       border-radius: 25px;
       font-weight: 600;
       color: black;
@@ -86,9 +90,12 @@ section{
         content: "";
         width: 108%;
         height: 120%;
-        border: 1px solid $my-lightgreen;
+        border: 1px solid $my-green;
         padding: 5px;
         border-radius: 30px;
+      }
+      &:hover{
+        background-color: $my-lightgreen;
       }
     }
   }
