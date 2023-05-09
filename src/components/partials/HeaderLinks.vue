@@ -4,7 +4,7 @@ export default {
   name:'HeaderLinks',
   props:{
     link:String,
-  }
+  },
 }
 </script>
 
@@ -12,7 +12,9 @@ export default {
   
   <ul>
     <li>
-      <a href="#">{{link}}</a>
+      <a v-if="link === 'home'" href="#">{{link}} </a>
+      <a v-else-if="link === 'contact'" href="#">{{link}} </a>
+      <a v-else href="#">{{link}} <img src="../../assets/svg/c-down-arrow.svg" ></a>
     </li>
   </ul>
 

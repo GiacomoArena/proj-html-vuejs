@@ -29,6 +29,7 @@
   v-for="(link,i) in store.haderLinks"
   :key="i"
   :link="link.text"
+  :i="i"
   />
 
 </div>
