@@ -89,7 +89,7 @@ ul{
       display: none;
       flex-direction: column;
       position: absolute;
-      background-color: $my-blue;
+      background-color: $my-darkblue;
       top: 40px;
       right: -60px;
       opacity: 0;

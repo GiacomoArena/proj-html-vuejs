@@ -135,7 +135,7 @@
       align-items: center;
       justify-content: center;
       height: 90px;
-      background-color: #1B222E;
+      background-color: $my-darkblue;
       color: $my-white;
       span{
         color:  $my-lightgreen;

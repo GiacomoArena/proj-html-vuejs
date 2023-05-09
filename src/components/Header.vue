@@ -56,7 +56,7 @@ section{
   width: 100%;
   font-family: $primary-font;
   //colore da togliere in futuro
-  background-color: $my-blue;
+  background-color: $my-darkblue;
   height: 105px;
   display: flex;
   align-items: center;
