@@ -1,5 +1,6 @@
 <script >
 import Header from './components/Header.vue';
+import Jumbotron from './components/Jumbotron.vue';
 import Footer from './components/Footer.vue';
 import {store} from "./data/store";
 
@@ -10,6 +11,7 @@ export default {
   components:{
   Header,
   Footer,
+  Jumbotron,
 },
 data(){
       return{
@@ -26,7 +28,7 @@ data(){
 
   <Header />
 
-  
+  <Jumbotron />
 
 
   <Footer />

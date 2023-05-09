@@ -80,7 +80,6 @@
   .top-footer{
     font-family: $secondary-font;
     height: 575px;
-    padding-top: 105px;
     color: white;
     background-color:$my-blue;
     display: flex;
