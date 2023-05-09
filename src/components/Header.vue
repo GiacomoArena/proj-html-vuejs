@@ -20,9 +20,9 @@
 
 <section>
 
-<div class="logo">
+
   <img src="../assets/logo.png" alt="logo">
-</div>
+
 
 <div class="link-menu">
   <HeaderLinks 
@@ -30,7 +30,16 @@
   :key="i"
   :link="link.text"
   />
+
 </div>
+
+
+<div class="cart">
+  <img src="../assets/icon/cart-icon.png" alt="cart">
+  <button>LIVE STREAMING</button>
+
+</div>
+  
 
 </section>
 
@@ -47,9 +56,41 @@ section{
   height: 105px;
   display: flex;
   align-items: center;
+  justify-content: space-around;
 
-  .logo{
-    width: 100%;
+  .link-menu{
+    display: flex;
+  }
+  .cart{
+    display: flex;
+    align-items: center;
+    img{
+      width: 25px;
+      height: 25px;
+    }
+    button{
+      background-color: $my-lightgreen;
+      border-radius: 25px;
+      font-weight: 600;
+      color: black;
+      padding: 10px 20px;
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin: 5px;
+      transition: 0.3s all;
+      border: none;
+      &::after{
+        position: absolute;
+        content: "";
+        width: 108%;
+        height: 120%;
+        border: 1px solid $my-lightgreen;
+        padding: 5px;
+        border-radius: 30px;
+      }
+    }
   }
 }
 

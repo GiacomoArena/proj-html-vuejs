@@ -18,6 +18,15 @@ export default {
 
 </template>
 
-<style>
+<style lang="scss" scoped>
+@use '../../scss/partials/variables' as*;
+ul{
+  margin: 0 10px;
+  list-style: none;
+  a{
+    text-decoration: none;
+    color: white;
+  }
+}
 
 </style>
