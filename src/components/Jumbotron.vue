@@ -21,7 +21,19 @@
       <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium </p>
       <div class="buttons">
         <button>explore games <img src="../assets/svg/e-double-right-arrow.svg"></button>
+
+        <a href="#">
+          <img class="play" src="../assets/icon/play-icon.png" alt="play">
+        </a>
+
       </div>
+
+    </div>
+
+    <div class="big-logo">
+      <a href="#">
+        <img src="../assets/index-banner-illus.png" alt="logo">
+      </a>
     </div>
     
 
@@ -35,6 +47,9 @@
 section{
   padding-top: 105px;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
   font-family: $primary-font;
   height: 900px;
   background-image: url(../assets/game-details-banner-bg.png);
@@ -42,11 +57,12 @@ section{
   background-size:cover;
   .controller{
     position: absolute;
-    top: 460px;
+    top: 480px;
     left: 30px;
     z-index: 0;
   }
   .side-container{
+    margin-left: 50px;
     display: flex;
     flex-direction: column;
     justify-items: center;
@@ -99,8 +115,49 @@ section{
       }
       img{
         filter: brightness(0);
+        margin-left: 5px;
       }
     }
+    a{
+      width: 50px;
+      height: 50px;
+      position: relative;
+      margin-left: 40px;
+      padding: 10px;
+      background-color: $my-white;
+      border-radius: 50%;
+      cursor: pointer;
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 1px solid $my-green;
+        border-radius: 50%;
+        transform: scale(1.1);
+        transition: transform 0.2s ease-out;
+        z-index: -1;
+        &{
+          transform: scale(0.9);
+          animation: pulse 1s infinite alternate ease-in-out;
+        }
+        @keyframes pulse {
+          0% {
+            transform: scale(1.6);
+          }
+          100% {
+            transform: scale(1.3);
+          }
+        }
+    }
+      }
+        }
+    }
+  .big-logo{
+    img{
+      width: 100%;
     }
   }
 }
