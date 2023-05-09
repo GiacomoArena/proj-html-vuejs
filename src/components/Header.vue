@@ -27,7 +27,9 @@ section{
   //colore da togliere in futuro
   background-color: $my-blue;
   height: 105px;
-  .logo
+  .logo{
+    width: 100%;
+  }
 }
 
 </style>
