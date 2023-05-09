@@ -68,6 +68,9 @@
     </div>
   </section>
 
+  <section class="bottom-footer">
+    <p>Copyright © 2022 <span>FUTIO</span> . All rights reserved.</p>
+  </section>
 </template>
 
 
@@ -126,5 +129,17 @@
         color: $my-lightgreen;
       }
     }
+    
   }
+  .bottom-footer{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 90px;
+      background-color: #1B222E;
+      color: $my-white;
+      span{
+        color:  $my-lightgreen;
+      }
+    }
 </style>
