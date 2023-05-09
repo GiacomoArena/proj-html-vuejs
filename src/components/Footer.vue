@@ -92,6 +92,10 @@
         margin: 5px;
         padding: 8px 11px;
         border-radius: 50%;
+        cursor: pointer;
+        &:hover{
+          background-color: $my-lightgreen;
+        }
       }
     }
     .info-section{
@@ -99,6 +103,9 @@
       ul{
         width: 200px;
         list-style: none;
+        li{
+          margin-top: 15px;
+        }
         a{
           text-decoration: none;
           color: $my-white;
@@ -113,6 +120,10 @@
         font-family: $primary-font;
         font-weight: 600;
         font-size: 1.5rem;
+      }
+      h6{
+        text-transform: capitalize;
+        color: $my-lightgreen;
       }
     }
   }
