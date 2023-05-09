@@ -53,6 +53,7 @@
 
 section{
   position: fixed;
+  z-index: 9999;
   width: 100%;
   font-family: $primary-font;
   //colore da togliere in futuro
@@ -96,6 +97,9 @@ section{
         border: 1px solid $my-green;
         padding: 5px;
         border-radius: 30px;
+      }
+      &:hover::after{
+        border-color: $my-lightgreen;
       }
       &:hover{
         background-color: $my-lightgreen;
