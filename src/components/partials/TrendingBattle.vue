@@ -205,7 +205,6 @@
       }
     }
     .card{
-      max-width: 630px;
       min-width: 300px;
       background-color: #283449;
       border-color: #3E5172;
