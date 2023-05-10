@@ -6,21 +6,28 @@
     data(){
       return{
         startNumber:0,
-        targets:100
+        target:[300]
       }
     },
-    methods:{
+    methods:{ 
+
       increaseNumber(){
         const timer = setInterval(() => {
-          
-          if (this.startNumber != this.targets) {
-            this.startNumber ++
-          }
-          else{
-            clearInterval(timer)
+          for (let i = 0; i < this.target.length; i++) {
+            
+            if (this.startNumber != this.target) {
+              this.startNumber ++
+            }
+            else{
+              clearInterval(timer)
+            }
+            
           }
         }, 50);
       }
+    },
+    mounted(){
+      
     }
   }
   </script>
@@ -32,7 +39,7 @@
   <h1>Futio Quick Facts</h1>
   <div class="containeraa">
     <div class="row justify-content-center">
-      <div class="col-2 me-3 card">
+      <div class="col-2 me-3 card" >
         {{startNumber}}
         <h5>Twich Stream</h5>
       </div>
@@ -46,7 +53,7 @@
       </div>
       <div class="col-2 me-3 card">
         {{startNumber}}
-        <h5>Twich Stream</h5>
+        <h5>Pro Team</h5>
       </div>
     </div>
   </div>
@@ -79,7 +86,7 @@
       transition: all 1s;
       h5{
         color: $my-lightgreen;
-        font-size: 1rem;
+        font-size: .8rem;
         font-weight: 600;
       }
     }

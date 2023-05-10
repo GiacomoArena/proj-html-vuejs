@@ -2,6 +2,7 @@
   import Platform from './partials/Platform.vue';
   import TrendingBattle from './partials/TrendingBattle.vue';
   import QuickFacts from './partials/QuickFacts.vue';
+  import LiveStreaming from './partials/LiveStreaming.vue';
 
   export default {
     name:'Main',
@@ -9,6 +10,7 @@
       Platform, 
       TrendingBattle,
       QuickFacts,
+      LiveStreaming,
     },
     data(){
       return{
@@ -26,6 +28,8 @@
   <TrendingBattle />
 
   <QuickFacts />
+
+  <LiveStreaming />
 </template>
 
 
