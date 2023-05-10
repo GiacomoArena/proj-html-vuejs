@@ -125,7 +125,7 @@
         input{
           padding: 10px;
           color: $my-white;
-          width: 300px;
+          width: 350px;
           height: 60px;
           border-radius: 15px;
           background-color: #425374;
