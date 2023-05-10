@@ -4,6 +4,7 @@
   import QuickFacts from './partials/QuickFacts.vue';
   import LiveStreaming from './partials/LiveStreaming.vue';
   import Feedback from './partials/Feedback.vue';
+  import Discount from './partials/Discount.vue';
 
   export default {
     name:'Main',
@@ -12,7 +13,8 @@
       TrendingBattle,
       QuickFacts,
       LiveStreaming,
-      Feedback
+      Feedback,
+      Discount
     },
     data(){
       return{
@@ -34,6 +36,8 @@
   <LiveStreaming />
 
   <Feedback />
+
+  <Discount />
 
 </template>
 
