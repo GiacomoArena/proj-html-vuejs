@@ -17,6 +17,19 @@
 <template>
 
   <section class="top-footer">
+    <div class="newsletter">
+      <span>
+        <h3>Subscribe Newsletter</h3>
+        <p>
+          libero malesuada feugiat. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.
+        </p>
+      </span>
+      <div class="input-container">
+        <input type="email" placeholder="Enter your email">
+        <img src="../assets/icon/send-icon.png" alt="icon">
+      </div>
+    </div>
+
     <div class="futio-social">
       <img src="../assets/logo.png" alt="logo">
       <p>Lorem ipsum dolor sit amet, elit. varius enim in eros elementum Duis mi quis viverra ornare</p>
@@ -78,13 +91,61 @@
 @use '../scss/partials/variables' as*;
 //da togliere e mettere succesivamente nel jumbotron
   .top-footer{
+    position: relative;
     font-family: $secondary-font;
     height: 575px;
     color: white;
-    background-color:$my-blue;
+    background-color:#283449;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    .newsletter{
+      font-family: $secondary-font;
+      padding: 60px;
+      width: 80%;
+      border-radius: 25px;
+      max-width: 1100px;
+      position: absolute;
+      color: white;
+      top: -150px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: $my-blue;
+      h3{
+        font-family: $primary-font;
+        font-size: 2.3rem;
+        font-weight: 600;
+      }
+      span{
+        width: 50%;
+      }
+      .input-container{
+        position: relative;
+        input{
+          padding: 10px;
+          color: $my-white;
+          width: 300px;
+          height: 60px;
+          border-radius: 15px;
+          background-color: #425374;
+          border: 1px solid #6e798f;
+          &:focus{
+            border-color: $my-lightgreen;
+            outline: none;
+          }
+        }
+        img{
+          padding: 7px;
+          border-radius: 50%;
+          position: absolute;
+          right: 15px;
+          bottom: 10px;
+          background-color: $my-lightgreen;
+          cursor: pointer;
+        }
+      }
+    }
     .futio-social{
       width: 400px;
       span{

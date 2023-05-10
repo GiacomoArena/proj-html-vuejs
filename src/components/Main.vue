@@ -5,6 +5,7 @@
   import LiveStreaming from './partials/LiveStreaming.vue';
   import Feedback from './partials/Feedback.vue';
   import Discount from './partials/Discount.vue';
+  import LatestNews from './partials/LatestNews.vue';
 
   export default {
     name:'Main',
@@ -14,7 +15,8 @@
       QuickFacts,
       LiveStreaming,
       Feedback,
-      Discount
+      Discount,
+      LatestNews
     },
     data(){
       return{
@@ -38,6 +40,8 @@
   <Feedback />
 
   <Discount />
+
+  <LatestNews />
 
 </template>
 
