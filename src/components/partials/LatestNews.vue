@@ -23,6 +23,18 @@
         libero malesuada feugiat. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Cras ultricies ligula sed magna dictum porta.
       </p>
   </div>
+
+  <div class="cards-containers">
+    <div class="big-card">
+      aaaaaaaa
+    </div>
+    <div class="side-container">
+      <div class="card">aaa</div>
+      <div class="card">bbb</div>
+      <div class="card">cccc</div>
+    </div>
+  </div>
+
   </section>
 </template>
 
@@ -55,5 +67,18 @@
         color: $my-white;
       }
     }
+    .cards-containers{
+      margin-top:20px;
+      display: flex;
+      .big-card{
+        background-color: $my-blue;
+        width: 400px;
+        height: 500px;
+      }
+      .card{
+        background-color: $my-blue;
+      }
+    }
+
   }
 </style>
