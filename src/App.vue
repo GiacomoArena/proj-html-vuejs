@@ -5,7 +5,6 @@ import Main from './components/Main.vue';
 import Footer from './components/Footer.vue';
 import {store} from "./data/store";
 
-
 export default {
   name:'App',
 
@@ -35,6 +34,7 @@ data(){
   <Main />
 
   <Footer />
+  
 </template>
 
 <style lang="scss">
