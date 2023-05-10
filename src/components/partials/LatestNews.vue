@@ -39,7 +39,20 @@
 
   <div class="cards-containers">
     <div class="big-card">
-      <img src="../../assets/blog-item-1.png" alt="user">
+      <img class="player" src="../../assets/blog-item-1.png" alt="user">
+      <div class="text">
+          <span>
+            <img src="../../assets/icon/clock.png" >
+            10 Min
+            <img src="../../assets/icon/eye.png">
+            240
+            <img src="../../assets/icon/calendar.png">
+            Apr 11,2022
+          </span>
+          <p>
+            Secrets To An Amazing Role Playing Game
+          </p>
+        </div>
     </div>
     <div class="side-container">
 
@@ -105,10 +118,30 @@
         border-radius: 20px;
         max-width: 640px;
         min-width: 300px;
-        height: 600px;
-        img{
+        height: 550px;
+        img.player{
+          cursor: pointer;
           width: 100%;
           object-fit: cover;
+        }
+        .text{
+          text-align: left;
+          margin-top: 20px;
+          margin-left: 20px;
+          img{
+            margin-left: 20px;
+          }
+          span{
+            color: $my-lightgreen;
+          }
+          p{
+            cursor: pointer;
+            padding: 10px;
+            margin-top: 15px;
+            font-size: 1.9rem;
+            color: white;
+            font-weight: 600;
+          }
         }
       }
       .cards{
@@ -119,7 +152,9 @@
         align-items: center;
         border-radius: 20px;
         width: 600px;
+        
         img.player{
+          cursor: pointer;
           border-radius: 20px;
           object-fit: cover;
         }
@@ -131,6 +166,8 @@
             color: $my-lightgreen;
           }
           p{
+            cursor: pointer;
+            padding: 10px;
             margin-top: 15px;
             font-size: 1.5rem;
             color: white;

@@ -93,7 +93,8 @@
   .top-footer{
     position: relative;
     font-family: $secondary-font;
-    height: 575px;
+    min-height: 575px;
+    padding-top: 100px;
     color: white;
     background-color:#283449;
     display: flex;
