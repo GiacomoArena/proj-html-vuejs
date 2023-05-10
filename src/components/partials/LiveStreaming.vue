@@ -39,6 +39,11 @@
           League Of Legends
         </p>
     </div>
+
+    <p class="view-like">
+      <span>356,599</span> Viewers
+      <span>23,599</span> Likes
+    </p>
   </div>
 </section>
 
@@ -98,6 +103,17 @@
         border-radius: 20px;
         right: 30px;
         top: 40px;
+      }
+      .view-like{
+        position: absolute;
+        bottom: 60px;
+        left: 10px;
+        font-size: 1.1rem;
+        span{
+          margin-left: 30px;
+          font-size: 1.1rem;
+          color: $my-lightgreen;
+        }
       }
       .play{
         font-family: $primary-font;
