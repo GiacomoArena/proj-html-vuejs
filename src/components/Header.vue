@@ -1,6 +1,7 @@
   <script>
   import {store} from "../data/store";
   import HeaderLinks from '../components/partials/HeaderLinks.vue'
+  import {products} from '../data/db'
 
   export default {
     name:'Headers',
@@ -9,7 +10,8 @@
     },
     data(){
       return{
-        store
+        store,
+        products
       }
     }
   }
@@ -41,15 +43,21 @@
   <span class="element-num">
     03
   </span>
-  <div class="cart-element">
-    <span class="d-flex">
-      <h6>Cart</h6>
+  <div class="cart-element" >
+    <span class=" d-flex justify-content-between">
+    <h6>Cart</h6>
       03
     </span>
-    <div class="product d-flex">
-      <img src="../assets/shop-image-3.png" alt="shop-img">
+    <div class="product d-flex"
+    v-for="(product, i) in products" :key="i">
+
+      <img :src="product.src" alt="shop-img">
       <span>
-        <h5>Havit RGB Headphone</h5>
+        <h5>{{product.name}}</h5>
+        $380.00
+        <span class="discount">
+          $410.00
+        </span>
       </span>
     </div>
   </div>
@@ -90,19 +98,57 @@ section{
     align-items: center;
     cursor: pointer;
     .cart-element{
+      border-radius: 10px;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: center;
+      align-content: center;
       position: absolute;
       width: 300px;
-      height: 100%;
-      padding: 15px;
+      padding: 10px;
       background-color: $my-blue;
       right: 190px;
       top: 85px;
+      span{
+        padding: 10px 0;
+        align-items: center;
+        color: $my-white;
+        font-weight: 600;
+        h6{
+          font-family: $primary-font;
+          font-size: 1.7rem;
+        }
+      }
+        
+      .product{
+        border-radius: 10px;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 5px;
+        border: 1px solid #3E5172;
+        img{
+          margin: 0;
+          margin-left: 5px;
+          width: 80px;
+          height: 80px;
+        }
+        span{
+          margin-left: 10px;
+          color: $my-lightgreen;
+        }
+        h5{
+          color: $my-white;
+          font-family: $primary-font;
+          font-weight: 600;
+        }
+        .discount{
+          color: $my-white;
+          text-decoration: line-through;
+        }
+      }
     }
-    span.element-num{
+    .element-num{
       text-align: center;
       width: 20px;
       position: absolute;

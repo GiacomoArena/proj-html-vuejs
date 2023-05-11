@@ -125,6 +125,19 @@ const followUs=[
   
 ]
 
+const products=[
+  {
+    name:'Havit RGB Headphone',
+    src: '/public/shop-image-3.png'
+  },
+  {
+    name:'Touch Controller Grip',
+    src: '/public/shop-image-5.png'
+  },
+  {
+    name:'Gaming Microphone',
+    src: '/public/shop-image-8.png'
+  },
+]
 
-
-export {games,shop,pages,blog,quickLink,help,followUs};
+export {games,shop,pages,blog,quickLink,help,followUs,products};
