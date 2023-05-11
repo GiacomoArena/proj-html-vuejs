@@ -11,7 +11,13 @@
     data(){
       return{
         store,
-        products
+        products,
+        cartFlag:false
+      }
+    },
+    methods:{
+      changeCartFlag(){
+        this.cartFlag = !this.cartFlag
       }
     }
   }
@@ -37,13 +43,13 @@
 </div>
 
 
-<div class="cart">
+<div class="cart" @click="changeCartFlag()">
   <img src="../assets/icon/cart-icon.png" alt="cart">
   <button>LIVE STREAMING</button>
   <span class="element-num">
     03
   </span>
-  <div class="cart-element" >
+  <div class="cart-element" :class="{'click-cart-element' : cartFlag === true}">
     <span class=" d-flex justify-content-between">
     <h6>Cart</h6>
       03
@@ -60,6 +66,7 @@
         </span>
       </span>
     </div>
+    <button class="checkout">CHECKOUT</button>
   </div>
 </div>
   
@@ -97,7 +104,14 @@ section{
     display: flex;
     align-items: center;
     cursor: pointer;
+    .click-cart-element{
+      right: 190px;
+      top: 85px !important;
+      opacity: 1 !important;
+      pointer-events: auto !important;
+    }
     .cart-element{
+      pointer-events: none;
       border-radius: 10px;
       display: flex;
       flex-direction: column;
@@ -106,18 +120,31 @@ section{
       position: absolute;
       width: 300px;
       padding: 10px;
+      padding-bottom: 100px;
       background-color: $my-blue;
       right: 190px;
-      top: 85px;
+      top: 385px;
+      opacity: 0;
+      transition: all 0.6s;
       span{
         padding: 10px 0;
         align-items: center;
         color: $my-white;
         font-weight: 600;
         h6{
+          font-weight: 600;
+          color: white;
           font-family: $primary-font;
           font-size: 1.7rem;
         }
+      }
+
+      .checkout{
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 120px;
       }
         
       .product{
