@@ -5,29 +5,34 @@
     name:'QuickFacts',
     data(){
       return{
-        startNumber:0,
-        target:[300]
+        fact:4,
+        factsNumber:[],
+        target:[1651,58,714,67],
       }
     },
     methods:{ 
-
+      allFacts(){
+        for (let i = 0; i < this.fact; i++) {
+          this.factsNumber.push(0)
+        }
+      },
       increaseNumber(){
-        const timer = setInterval(() => {
-          for (let i = 0; i < this.target.length; i++) {
-            
-            if (this.startNumber != this.target) {
-              this.startNumber ++
+        
+          for (let i = 0; i < this.factsNumber.length && i < this.target.length; i++) {
+            const timer = setInterval(() => {
+            if (this.factsNumber[i] != this.target[i]) {
+              this.factsNumber[i] ++
             }
             else{
               clearInterval(timer)
             }
             
+          }, 50);
           }
-        }, 50);
       }
     },
-    mounted(){
-      
+    created(){
+      this.allFacts()
     }
   }
   </script>
@@ -40,19 +45,19 @@
   <div class="containeraa">
     <div class="row justify-content-center">
       <div class="col-2 me-3 card" >
-        {{startNumber}}
+        {{factsNumber[0]}}
         <h5>Twich Stream</h5>
       </div>
       <div class="col-2 me-3 card">
-        {{startNumber}}
+        {{factsNumber[1]}}
         <h5>Total Games</h5>
       </div>
       <div class="col-2 me-3 card">
-        {{startNumber}}
+        {{factsNumber[2]}}
         <h5>Youtube Streams</h5>
       </div>
       <div class="col-2 me-3 card">
-        {{startNumber}}
+        {{factsNumber[3]}}
         <h5>Pro Team</h5>
       </div>
     </div>
