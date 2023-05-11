@@ -12,8 +12,8 @@
   </script>
 
 
-<template>
-  <section>
+<template >
+  <section  @mouseover="$emit('scrolltrue')">
     <img class="controller" src="../assets/game-controler.png">
     <div class="side-container">
       <span>Game With Live Stearming</span>

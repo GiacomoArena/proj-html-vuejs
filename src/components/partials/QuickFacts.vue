@@ -7,7 +7,7 @@
       return{
         fact:4,
         factsNumber:[],
-        target:[1651,58,714,67],
+        target:[1051,58,714,67],
       }
     },
     methods:{ 
@@ -27,7 +27,7 @@
               clearInterval(timer)
             }
             
-          }, 50);
+          }, 40);
           }
       }
     },

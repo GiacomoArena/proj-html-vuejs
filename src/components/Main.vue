@@ -27,21 +27,23 @@
   </script>
 
 
-<template>
-
-  <Platform />
-
-  <TrendingBattle />
-
-  <QuickFacts />
-
-  <LiveStreaming />
-
-  <Feedback />
-
-  <Discount />
-
-  <LatestNews />
+<template >
+  <section @mouseover="$emit('scrollfalse')">
+    
+    <Platform />
+  
+    <TrendingBattle />
+  
+    <QuickFacts />
+  
+    <LiveStreaming />
+  
+    <Feedback />
+  
+    <Discount />
+  
+    <LatestNews />
+  </section>
 
 </template>
 
