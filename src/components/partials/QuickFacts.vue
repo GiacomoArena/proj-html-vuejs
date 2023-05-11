@@ -17,6 +17,7 @@
         }
       },
       increaseNumber(){
+        //I create a function that takes the initial number and takes it to the target value by seeing the increment through a setinterval
         
           for (let i = 0; i < this.factsNumber.length && i < this.target.length; i++) {
             const timer = setInterval(() => {

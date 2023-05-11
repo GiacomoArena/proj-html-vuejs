@@ -17,6 +17,7 @@
 <template>
 
   <section class="top-footer">
+    <!-- newsletter in absolute -->
     <div class="newsletter">
       <span>
         <h3>Subscribe Newsletter</h3>
@@ -40,7 +41,7 @@
     </div>
 
     <div class="info-section">
-      
+      <!-- I import data dynamically from db.js -->
       <ul>
         <h3>quick links</h3>
         <li v-for="(link,i) in quickLink" 
@@ -89,7 +90,6 @@
 
 <style lang="scss" scoped>
 @use '../scss/partials/variables' as*;
-//da togliere e mettere succesivamente nel jumbotron
   .top-footer{
     position: relative;
     font-family: $secondary-font;

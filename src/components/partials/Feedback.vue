@@ -39,7 +39,7 @@
       </p>
   </div>
 <div class="card-container d-flex">
-
+<!-- I dynamically generate cards with v-for -->
   <div class="card" v-for="(card,i) in cards " :key="i">
     <div class="text">
       <span>

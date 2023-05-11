@@ -55,7 +55,7 @@
         </div>
     </div>
     <div class="side-container">
-
+<!-- I dynamically generate side cards with v-for -->
       <div class="cards d-flex" v-for="(card,i) in cards" :key="i">
         <img class="player" :src="card.src" alt="user">
         <div class="text-side">

@@ -27,6 +27,7 @@
     </p>
   </div>
   <div class="live-section">
+    <!-- the background is in the background -->
     <button>
       <img src="../../assets/icon/live-icon.png">
       Live

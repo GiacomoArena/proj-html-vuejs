@@ -28,8 +28,9 @@
 
 
 <template >
+  <!-- I create a $emit that will change the value of a flag for me that is used to make the button that sends you to the top page visible or not -->
   <section @mouseover="$emit('scrollfalse')">
-    
+    <!-- I create partials that will then be called here on the main  -->
     <Platform />
   
     <TrendingBattle />

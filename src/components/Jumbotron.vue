@@ -13,6 +13,7 @@
 
 
 <template >
+  <!-- I create a $emit that will change the value of a flag for me that is used to make the button that sends you to the top page visible or not -->
   <section  @mouseover="$emit('scrolltrue')">
     <img class="controller" src="../assets/game-controler.png">
     <div class="side-container">

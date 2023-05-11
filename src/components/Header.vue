@@ -28,7 +28,7 @@
 
 <section>
 
-
+<!-- logo -->
   <img src="../assets/logo.png" alt="logo">
 
 
@@ -42,18 +42,21 @@
 
 </div>
 
-
+<!-- upon clicking 'cart' I make 'cart-element' visible -->
 <div class="cart" @click="changeCartFlag()">
   <img src="../assets/icon/cart-icon.png" alt="cart">
   <button>LIVE STREAMING</button>
+
   <span class="element-num">
     03
   </span>
+
   <div class="cart-element" :class="{'click-cart-element' : cartFlag === true}">
     <span class=" d-flex justify-content-between">
     <h6>Cart</h6>
       03
     </span>
+    <!-- cycle products so I can dynamically create in number of cards I need  -->
     <div class="product d-flex"
     v-for="(product, i) in products" :key="i">
 
