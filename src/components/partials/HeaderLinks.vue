@@ -42,13 +42,34 @@ export default {
           </li>
         </ul>
       </span>
+
       <span class="hover-container" v-if="link === 'pages'" >
         <ul v-for="(text, i) in pages" :key="i">
           <li>
-            <a href="#">{{text.text}}</a>
+
+            <a v-if="text.text === 'team'" href="#">
+              {{text.text}}
+              <i class="fa-solid fa-caret-right"></i>
+              <ul class="insider-link">
+                <li><a href="#">All Team</a></li>
+                <li><a href="#">Team Details</a></li>
+              </ul>
+            </a>
+
+            <a v-else-if="text.text === 'player'" href="#">
+              {{text.text}}
+              <i class="fa-solid fa-caret-right"></i>
+              <ul class="insider-link">
+                <li><a href="#">Players</a></li>
+                <li><a href="#">Players Single</a></li>
+              </ul>
+            </a>
+
+            <a v-else href="#">{{text.text}}</a>
           </li>
         </ul>
       </span>
+
       <span class="hover-container" v-if="link === 'blog'" >
         <ul v-for="(text, i) in blog" :key="i">
           <li>
@@ -74,6 +95,7 @@ ul{
     text-decoration: none;
     color: white;
     padding: 15px 0;
+    transition: all 0.1s;
     &:hover{
       color: $my-lightgreen;
     }
@@ -95,7 +117,17 @@ ul{
       top: 40px;
       right: -60px;
       opacity: 0;
-      
+      a:hover .insider-link{
+        opacity: 1;
+      } 
+      .insider-link{
+        position: absolute;
+        width: 200px;
+        background-color: $my-darkblue;
+        left: 150px;
+        top: 15px;
+        opacity: 0;
+      }
     }
 
   }
